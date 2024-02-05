@@ -10,7 +10,7 @@ RUN echo 'Dpkg::Options { "--force-confdef"; "--force-confold"; }' > /etc/apt/ap
 
 # Update and upgrade the system without any prompts
 RUN apt update -y
-RUN apt install -y --no-install-recommends openvpn hurl iputils-ping hashcat nmap burpsuite metasploit-framework evil-winrm ftp python3-impacket freerdp2-x11 rdesktop ffuf wfuzz seclists wordlists
+RUN apt install -y --no-install-recommends openvpn hurl iputils-ping hashcat nmap burpsuite metasploit-framework evil-winrm ftp python3-impacket freerdp2-x11 rdesktop ffuf wfuzz seclists wordlists jq
 
 # Reset the environment to its default state
 ENV DEBIAN_FRONTEND newt
